@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row col-sm-9 mx-auto">
+            <div class="offset-sm-1"></div>
+            <h3 class="text-center my-3 col-sm-11">會員基本資料</h3>
+
+        </div>
+        <form action="">
+            <div class="row col-sm-9 mx-auto">
+                <label for="username" class="col-form-label col-sm-1 text-center">帳號</label>
+                <div class="offset-sm-1 col-sm-4">
+                    <input type="text" name="username" id="username" class="form-control">
+                </div>
+
+                <label for="password" class="col-form-label col-sm-1 text-center">密碼</label>
+                <div class="offset-sm-1 col-sm-4">
+                    <input type="text" name="password" id="password" class="form-control">
+                </div>
+            </div>
+            <div class="row col-sm-9 mx-auto mt-3">
+                <label for="email" class="col-form-label col-sm-1 text-center">Email</label>
+                <div class="offset-sm-1 col-sm-4">
+                    <input type="text" name="email" id="email" class="form-control" placeholder="name@example.com">
+                </div>
+
+                <label for="birthday" class="col-form-label col-sm-1 text-center">生日</label>
+                <div class="offset-sm-1 col-sm-4">
+                    <input type="date" name="birthday" id="birthday" class="form-control">
+                </div>
+            </div>
+            <div class="row col-sm-9 mx-auto mt-3">
+                <label for="school" class="col-form-label col-sm-1 text-center">學歷</label>
+                <div class="offset-sm-1 col-sm-4">
+                    <select name="school" id="school" class="form-control">
+                        <option value=""></option>
+                        <option value="">國中</option>
+                        <option value="">高中</option>
+                        <option value="">學士</option>
+                        <option value="">五專</option>
+                        <option value="">碩士</option>
+                        <option value="">博士</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row col-sm-9 mx-auto mt-3">
+                <label for="hobby" class="col-form-label col-sm-1 text-center">興趣</label>
+                <div class="offset-sm-1 col-sm-2 mt-2 text-center">
+                    <input type="checkbox" name="music" id="music" value="1">
+                    <label for="music">聽音樂</label>
+                </div>
+                <div class="col-sm-2 mt-2 text-center">
+                    <input type="checkbox" name="game" id="game" value="1">
+                    <label for="game">打電動</label>
+                </div>
+                <div class="col-sm-2 mt-2 text-center">
+                    <input type="checkbox" name="fitness" id="fitness" value="1">
+                    <label for="fitness">健身</label>
+                </div>
+                <div class="col-sm-2 mt-2 text-center">
+                    <input type="checkbox" name="basketball" id="basketball" value="1">
+                    <label for="basketball">打籃球</label>
+                </div>
+            </div>
+            <div class="row col-sm-9 mx-auto mt-3">
+                <label for="age" class="col-form-label col-sm-1 text-center">年齡</label>
+                <div class="offset-sm-1 col-sm-2 mt-2 text-center">
+                    <input type="radio" name="age1" id="age1">
+                    <label for="age1">18~24歲</label>
+                </div>
+                <div class="col-sm-2 mt-2 text-center">
+                    <input type="radio" name="age1" id="age1">
+                    <label for="age1">25~30歲</label>
+                </div>
+                <div class="col-sm-2 mt-2 text-center">
+                    <input type="radio" name="age1" id="age1">
+                    <label for="age1">31~35歲</label>
+                </div>
+                <div class="col-sm-2 mt-2 text-center">
+                    <input type="radio" name="age1" id="age1">
+                    <label for="age1">36~40歲</label>
+                </div>
+            </div>
+            <div class="row col-sm-9 mx-auto mt-3">
+                <label for="" class="col-form-label col-sm-2 text-left">自我介紹</label>
+                <!-- <textarea name="" id="" cols="50" rows="10" class="offset-sm-1 col-sm-10 mt-2"></textarea> -->
+            </div>
+            <div class="row col-sm-9 mx-auto mt-3">
+                <label for="introduction" class="offset-sm-1"></label>
+                <textarea name="introduction" id="introduction" cols="50" rows="10" class="offset-sm-1 col-sm-10 mt-2" placeholder="200字 自我介紹"></textarea>
+            </div>
+            <div class="row col-sm-9 mx-auto mt-3">
+                <div class="offset-sm-4"></div>
+                <button type="submit" class="btn btn-success text-center col-sm-2">
+                    <i class="far fa-arrow-alt-circle-right"></i> 送出
+                </button>
+                <button type="reset" class="btn btn-danger text-center col-sm-2 offset-sm-2">
+                    <i class="far fa-arrow-alt-circle-right"></i> 重新輸入
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- jquery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
